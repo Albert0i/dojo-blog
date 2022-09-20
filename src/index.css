@@ -18,7 +18,8 @@
   color: #f1356d;
 }
 .navbar .links {
-  margin-left: auto;
+  margin-left: auto; 
+  font-weight: bold;
 }
 .navbar a {
   margin-left: 16px;
@@ -62,7 +63,7 @@
   margin: 20px 0;
 }
 .blog-details-edit {
-  background: #aaa;
+  background: #777;
   color: #fff;
   border: 0;
   padding: 8px;

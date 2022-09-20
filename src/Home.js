@@ -38,7 +38,8 @@ const Home = () => {
       <div className="home">
         { error && <div><h1>{ error }</h1></div> }
         { isPending && <div><h1>Loading...</h1></div> }
-        { blogs && <BlogList blogs={blogs} title='All Blogs' /> }        
+        { blogs && <BlogList blogs={blogs} title='All Blogs' /> }
+        { blogs && <h2>Number of blogs is {blogs.length}</h2> }
       </div>
     );
   }
