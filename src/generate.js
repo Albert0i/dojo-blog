@@ -2,7 +2,7 @@ module.exports = () => {
     const { faker } = require("@faker-js/faker")
     const _ = require("lodash")
 
-    return { blogs: _.times(100, function(n) {
+    return { blogs: _.times(10, function(n) {
                 return {                    
                     title: faker.hacker.phrase(),
                     body: faker.lorem.paragraph(),
