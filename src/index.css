@@ -144,3 +144,16 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* not found */
+.not-found {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.not-found a {
+  text-decoration: none;
+}
+.not-found a:hover {
+  color: #f1356d;  
+}
