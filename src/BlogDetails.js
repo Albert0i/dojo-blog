@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const history = useHistory()
     
     const handleEdit = () => {
-        console.log('edit')
+        history.push('/blogs/edit/' + id)
     }
     const handleDelete = () => {
         fetch(HOST_URI + id, {
