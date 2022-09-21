@@ -70,7 +70,8 @@ const EditDetails = () => {
                             {!isUpdating && (<button>Update Blog</button>) }
                             {isUpdating && (<button disabled>Updating Blog</button>) }
                             </form>                        </div>
-                      )}
+                      )
+            }
       </div>
      );
 }
