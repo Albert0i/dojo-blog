@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useHistory } from 'react-router-dom'
+import { HOST_URI, FETCH_DELAY } from './conn'
 
 const Create = () => {
   const [title, setTitle] = useState('');
@@ -14,17 +15,17 @@ const Create = () => {
     setIsPending(true)
 
     setTimeout(() => {
-      fetch('http://localhost:8000/blogs', {
+      fetch(HOST_URI, {
         method: 'POST', 
         headers: { "Content-Type":"application/json"},
         body: JSON.stringify(blog)
       }).then(()=>{
         console.log('new blog added')
         setIsPending(false)
-        //history.go(-1)
-        history.push('/')
+        //history.go(-1)  // Go Back 
+        history.push('/') // Go Home
       })
-    }, 1000)
+    }, FETCH_DELAY)
   }
 
   return (

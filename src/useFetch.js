@@ -2,6 +2,7 @@
     A custom hook for fetching data
 */
 import { useEffect, useState } from 'react';
+import { FETCH_DELAY } from './conn'
 
 const useFetch = (url) => {
     const [data, setData] = useState(null)
@@ -33,7 +34,7 @@ const useFetch = (url) => {
                 setIsPending(false)  
               }
             })
-        }, 300)
+        }, FETCH_DELAY)
 
         return () => abortCont.abort()
       }, [url])
